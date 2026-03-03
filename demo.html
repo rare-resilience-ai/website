@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Demo - Rare Resilience AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <style>
+        .demo-form-section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--gray-900);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--gray-300);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-teal);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent-teal);
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .submit-btn:hover {
+            background: #0e7490;
+            transform: translateY(-2px);
+        }
+        .success-message {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="Rare Resilience AI Logo" class="logo-img">
+                <span class="logo-text">Rare Resilience AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="platform.html">Platform</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="for-oncologists.html">For Oncologists</a></li>
+                <li><a href="for-pharma.html">For Pharma</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="demo.html" class="btn-primary-nav">Request Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container demo-form-section">
+            <h1 style="text-align: center; color: var(--primary-blue); margin-bottom: 1rem;">Request a Demo</h1>
+            <p style="text-align: center; color: var(--gray-600); margin-bottom: 3rem;">
+                See how our Dynamic Digital Twin can transform treatment for your pediatric cancer patients.
+            </p>
+
+            <form id="demo-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="institution">Institution/Organization *</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Your Role *</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Select Role --</option>
+                        <option value="oncologist">Pediatric Oncologist</option>
+                        <option value="researcher">Researcher/Scientist</option>
+                        <option value="pharma">Pharma/Biotech Partner</option>
+                        <option value="investor">Investor</option>
+                        <option value="hospital-admin">Hospital Administrator</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Area of Interest</label>
+                    <select id="interest" name="interest">
+                        <option value="">-- Select Area --</option>
+                        <option value="osteosarcoma">Osteosarcoma</option>
+                        <option value="ewing">Ewing Sarcoma</option>
+                        <option value="rhabdo">Rhabdomyosarcoma</option>
+                        <option value="clinical-trial">Clinical Trial Partnership</option>
+                        <option value="institutional">Institutional Deployment</option>
+                        <option value="research">Research Collaboration</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about your needs (optional)</label>
+                    <textarea id="message" name="message" placeholder="What specific challenges are you facing? How many patients would you serve?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Demo</button>
+
+                <div id="success-message" class="success-message">
+                    <strong>✓ Thank you!</strong><br>
+                    Your demo request has been submitted. We'll contact you within 24 hours at the email address you provided.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <img src="logo.svg" alt="Rare Resilience AI" class="footer-logo">
+                <p>Transforming pediatric oncology through AI-powered digital twin technology.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="hipaa.html">HIPAA Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Rare Resilience AI, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('demo-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                institution: document.getElementById('institution').value,
+                role: document.getElementById('role').value,
+                interest: document.getElementById('interest').value,
+                message: document.getElementById('message').value
+            };
+            
+            // In production, you would send this to your backend
+            // For now, just show success message
+            console.log('Demo request:', formData);
+            
+            // Show success message
+            document.getElementById('success-message').style.display = 'block';
+            
+            // Clear form
+            this.reset();
+            
+            // Scroll to success message
+            document.getElementById('success-message').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
